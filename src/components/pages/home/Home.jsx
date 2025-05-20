@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import ProductCard from './products/ProductCard';
+import AddProduct from './products/AddProduct';
 
 const Home = () => {
 
@@ -27,7 +28,7 @@ const Home = () => {
 
 
             <div className='col-span-1'>
-             <h2> AddProduct</h2>
+            <AddProduct/>
             </div>
         </div>
     </div>
