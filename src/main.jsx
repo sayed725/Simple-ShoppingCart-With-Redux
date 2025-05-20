@@ -4,6 +4,8 @@ import './index.css'
 import { BrowserRouter, Route, Routes } from "react-router";
 import App from './App.jsx'
 import Home from './components/pages/home/Home.jsx';
+import { Provider } from 'react-redux';
+import store from './redux/store.js';
 
 
 
@@ -11,7 +13,8 @@ import Home from './components/pages/home/Home.jsx';
 
 
 createRoot(document.getElementById('root')).render(
- <BrowserRouter>
+<Provider store={store}>
+   <BrowserRouter>
      <Routes>
       <Route element={ <App/>}>
           <Route path='/' element={ <Home/> }/>
@@ -20,4 +23,5 @@ createRoot(document.getElementById('root')).render(
       </Route>
      </Routes>
  </BrowserRouter>
+</Provider>
 )
