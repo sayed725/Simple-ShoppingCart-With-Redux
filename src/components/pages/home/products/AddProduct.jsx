@@ -1,7 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form"
 import { useDispatch } from "react-redux";
-import { addProduct } from "../../redux/features/products/productSlice";
+import { addProduct } from "../../../../redux/features/products/productSlice";
 
 const AddProduct = () => {
     const {
@@ -10,10 +10,10 @@ const AddProduct = () => {
         
       } = useForm()
 
-      const dispatch = useDispatch();
+    const dispatch = useDispatch();
     
       const onSubmit = (data) => {
-        dispatch(addProduct(data))
+       dispatch(addProduct(data));
       }
 
 
