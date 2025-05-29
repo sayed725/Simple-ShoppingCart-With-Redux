@@ -21,7 +21,7 @@ const Home = () => {
                   {
                     products.length ? products.map((product, index) => (
                       <ProductCard key={index} product={product}/>
-                    ))  : <p> Sorry, No product Found!</p>
+                    ))  : <p> No product Found!</p>
                   }
                 </div>
             </div>
